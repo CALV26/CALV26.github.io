@@ -242,10 +242,9 @@ section {
   z-index: -1;
 }
 
-.case .container {
+.case .container a {
   text-decoration: none;
   font-style: normal;
-  cursor: pointer;
 }
 
 .card {
@@ -272,7 +271,7 @@ section {
 .info h3 {
   font-weight: light;
   text-align: center;
-  color: #c8f2ff;
+  color: #413737;
 }
 
 .info h2 {

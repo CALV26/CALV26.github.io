@@ -64,6 +64,7 @@
 .products-preview .preview {
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   padding: 0;
   border-radius: 20px;
@@ -118,6 +119,7 @@
 
 .products-preview .preview h3 {
   font-size: 5vh;
+  cursor: default;
 }
 
 .products-preview .preview p {
@@ -125,6 +127,7 @@
   padding: 5px 0;
   font-size: 1.5vw;
   color: #777;
+  cursor: default;
 }
 
 .products-preview .preview .price {
@@ -134,6 +137,7 @@
   margin-right: auto;
   color: #fff;
   background: #27ae60;
+  cursor: default;
 }
 
 .products-preview .preview .buttons {
@@ -154,4 +158,31 @@
 .products-preview .preview .buttons a.buy:hover {
   background: #444;
   color: #fff;
+}
+
+/* media query */
+/* small screen */
+@media only screen and (max-width: 600px) {
+  .products-preview .preview {
+    margin-bottom: 60px;
+    width: 90%;
+    height: 70%;
+  }
+
+  .preview .isi-prev {
+    justify-content: center;
+  }
+
+  .preview .preview-desc {
+    width: 90%;
+    margin: 0;
+  }
+
+  .preview .preview-desc .title {
+    font-size: 2rem;
+  }
+
+  .preview .preview-desc p {
+    font-size: 1.6rem;
+  }
 }

@@ -1,0 +1,157 @@
+.products-preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+/* background pop up card */
+.preview:nth-child(1) {
+  background: url("https://akubisa.web.id/wp-content/uploads/2022/06/Basreng-Pedas-Kering.jpg");
+}
+
+.preview:nth-child(2) {
+  background: url("https://www.seovanjava.com/wp-content/uploads/2019/02/eau-de-parfum-5-1024x576.png");
+}
+
+.preview:nth-child(3) {
+  background: url("https://cdn0-production-images-kly.akamaized.net/sQ5qo6jNtjqUc6vLe8VYcyjUsGI=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3176353/original/089255000_1594387385-20200608153036-1-resep-camilan-pedas-ini-bikin-ketagihan-005-billy-adytya.jpg");
+}
+
+.preview:nth-child(4) {
+  background: url("http://mesinpengemas.id/wp-content/uploads/2017/11/tempe-balado.jpg");
+}
+
+.preview:nth-child(5) {
+  background: url("https://cdn0-production-images-kly.akamaized.net/iJIU5ep66jW-LRkj5uVsLYtwwi0=/0x1877:3999x4131/320x180/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3921208/original/011997600_1643771061-shutterstock_2057504657.jpg");
+}
+
+.preview:nth-child(6) {
+  background: url("https://www.resepmami.info/wp-content/uploads/2021/04/xResep-Mie-Lidi-Bumbu-Basah-630x380.jpeg.pagespeed.ic.U-b7AA4io_.jpg");
+}
+
+.preview:nth-child(7) {
+  background: url("https://s3.bukalapak.com/img/3006921749/large/Stik_Basreng_Original_berat_180gram.jpg");
+}
+
+.preview:nth-child(8) {
+  background: url("https://cdn-2.tstatic.net/travel/foto/bank/images/ilustrasi-keripik-singkong.jpg");
+}
+
+.preview:nth-child(9) {
+  background: url("http://api.omiyago.com/webroot/img/p/3/9/0/8/3908.jpg");
+}
+
+.preview:nth-child(10) {
+  background: url("https://www.primarasa.co.id/images/images/Keripik%20Tempe%20-%20resep.jpg");
+}
+
+.preview:nth-child(11) {
+  background: url("https://img-global.cpcdn.com/recipes/63be7e087aeb4f4a/1200x630cq70/photo.jpg");
+}
+
+.preview:nth-child(12) {
+  background: url("https://t-2.tstatic.net/tribunnewswiki/foto/bank/images/Mie-Lidi1.jpg");
+}
+/* end bg pop up card */
+
+.products-preview .preview {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 0;
+  border-radius: 20px;
+  width: 70%;
+  height: 80vh;
+  overflow: hidden;
+  z-index: 3;
+  display: none;
+}
+
+.products-preview .preview.active {
+  display: block;
+}
+
+.preview .isi-prev {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(53, 53, 53, 0.1), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
+}
+
+.preview .preview-desc {
+  text-align: center;
+  width: 30%;
+  margin-right: 55px;
+}
+
+.products-preview .preview-img {
+  height: 100%;
+  width: 55%;
+}
+
+.products-preview .preview-img img {
+  height: 100%;
+}
+
+.products-preview .preview .icon-close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  text-align: right;
+  cursor: pointer;
+  color: #444;
+  font-size: calc(100vh * 0.05);
+  transition: 0.3s ease;
+}
+
+.products-preview .preview .icon-close:hover {
+  transform: rotate(90deg);
+}
+
+.products-preview .preview h3 {
+  font-size: 5vh;
+}
+
+.products-preview .preview p {
+  line-height: 0.5;
+  padding: 5px 0;
+  font-size: 1.5vw;
+  color: #777;
+}
+
+.products-preview .preview .price {
+  font-size: 2.5rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  background: #27ae60;
+}
+
+.products-preview .preview .buttons {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.products-preview .preview .buttons a {
+  flex: 1 1 16rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  color: #444;
+  border: 0.1rem solid #444;
+}
+
+.products-preview .preview .buttons a.buy:hover {
+  background: #444;
+  color: #fff;
+}

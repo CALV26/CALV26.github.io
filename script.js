@@ -23,15 +23,14 @@ previewBox.forEach((preview) => {
 });
 
 // jumlah
-let jumlah = document.querySelectorAll(".jumlah"),
-  num = document.querySelectorAll(".num");
+// let jumlah = document.querySelectorAll(".jumlah"),
+//   num = document.querySelectorAll(".num");
 
-let x = 1;
+// let x = 1;
 
-jumlah.forEach(function(el)) {
-  let numData = num
-};
-
+// jumlah.forEach(function(el)) {
+//   let numData = num
+// };
 
 // document.addEventListener("click", function (e) {
 //   if (e.target.classList.contains("plus")) {

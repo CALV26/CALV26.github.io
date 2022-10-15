@@ -23,20 +23,23 @@ previewBox.forEach((preview) => {
 });
 
 // jumlah
-const plus = document.querySelector(".plus"),
-  minus = document.querySelector(".minus"),
-  num = document.querySelector(".num");
-let a = 1;
-plus.addEventListener("click", () => {
-  a++;
-  a = a < 10 ? "0" + a : a;
-  num.innerText = a;
-});
+let jumlah = document.querySelectorAll(".jumlah"),
+  num = document.querySelectorAll(".num");
 
-minus.addEventListener("click", () => {
-  if (a > 1) {
-    a--;
-    a = a < 10 ? "0" + a : a;
-    num.innerText = a;
-  }
-});
+let x = 1;
+
+jumlah.forEach(function(el)) {
+  let numData = num
+};
+
+
+// document.addEventListener("click", function (e) {
+//   if (e.target.classList.contains("plus")) {
+//     let number = num.getAttribute("data-num");
+//     num.forEach(function (element) {
+//       if (jml == number) {
+//         element.innerHTML = `${(x += 1)}`;
+//       }
+//     });
+//   }
+// });

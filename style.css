@@ -212,11 +212,13 @@ section {
 .home .content span {
   font-size: 2rem;
   color: rgb(231, 248, 214);
+  cursor: default;
 }
 
 .home .content h3 {
   font-size: 3rem;
   color: rgb(177, 226, 241);
+  cursor: default;
 }
 
 /* products */
@@ -228,6 +230,10 @@ section {
   align-items: center;
   margin-bottom: 200px;
   margin-top: 50px;
+}
+
+#products h1 {
+  cursor: default;
 }
 
 .case {
@@ -284,6 +290,10 @@ section {
 /* contact us */
 .contact {
   margin-bottom: 300px;
+}
+
+#contact h1 {
+  cursor: default;
 }
 
 .contact form {
@@ -352,6 +362,7 @@ section {
   color: rgb(126, 126, 126);
   padding: 0.7rem 0;
   text-align: justify;
+  cursor: default;
 }
 
 .footer .credit {
@@ -359,6 +370,7 @@ section {
   border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 2vw;
+  cursor: default;
 }
 
 .footer .credit span {

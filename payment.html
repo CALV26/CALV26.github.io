@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UTS e-commerce</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="payment-style.css" />
+    <script src="https://kit.fontawesome.com/4fb195406b.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- navigation bar -->
+      <nav class="navbar">
+        <ul class="navbar-nav">
+          <li class="logo">
+            <a href="index.html" class="nav-link">
+              <span class="link-text logo-text">GoCem</span>
+              <i class="fa-solid fa-pepper-hot nav-logo"></i>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <i class="fa-solid fa-torii-gate nav-icon"></i>
+              <span class="link-text">Home</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">
+              <i class="fa-solid fa-utensils nav-icon"></i>
+              <span class="link-text">Products</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">
+              <i class="fas fa-solid fa-question nav-icon"></i>
+              <span class="link-text">About Us</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-solid fa-comment-dots nav-icon"></i>
+              <span class="link-text">Contact Us</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="payment.html" class="nav-link">
+              <i class="fas fa-solid fa-credit-card nav-icon"></i>
+              <span class="link-text">Payment</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- end navigation  -->
+
+      <!-- main -->
+      <main>
+        <div class="pay-frame">
+          <div class="pay-form" id="f2">
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Email" />
+            <input type="text" placeholder="Phone Number" />
+            <input type="text" placeholder="Address" />
+
+            <ul class="pay-acc">
+              <li>
+                <label for="first">Transfer Bank <i class="fa-solid fa-caret-down"></i></label>
+                <input type="radio" name="accordion" id="first" />
+                <div class="content">
+                  <i class="fa-solid fa-piggy-bank"></i>
+                  <i class="fa-solid fa-building-columns"></i>
+                  <i class="fa-solid fa-money-check-dollar"></i>
+                  <i class="fa-brands fa-hackerrank"></i>
+                  <i class="fa-brands fa-bandcamp"></i>
+                </div>
+              </li>
+
+              <li>
+                <label for="second">e-wallet <i class="fa-solid fa-caret-down"></i></label>
+                <input type="radio" name="accordion" id="second" />
+                <div class="content">
+                  <i class="fa-brands fa-google-wallet"></i>
+                  <i class="fa-solid fa-wallet"></i>
+                  <i class="fa-solid fa-pallet"></i>
+                  <i class="fa-solid fa-money-bill-wave"></i>
+                  <i class="fa-solid fa-dollar-sign"></i>
+                  <i class="fa-solid fa-rupiah-sign"></i>
+                </div>
+              </li>
+
+              <li>
+                <label for="third">Crypto <i class="fa-solid fa-caret-down"></i></label>
+                <input type="radio" name="accordion" id="third" />
+                <div class="content">
+                  <i class="fa-brands fa-bitcoin"></i>
+                  <i class="fa-brands fa-ethereum"></i>
+                  <i class="fa-brands fa-monero"></i>
+                  <i class="fa-brands fa-gg-circle"></i>
+                </div>
+              </li>
+            </ul>
+            <button class="btn-pay" id="btn-pay">confirm</button>
+          </div>
+          <div class="pay-form" id="f3">
+            <img src="https://qris.id/api-doc/assets/img/MPM_QRIS_Dasar.jpg" alt="QRIS example" />
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      // pay
+      let confirm = document.getElementById("btn-pay"),
+        f2 = document.getElementById("f2"),
+        f3 = document.getElementById("f3");
+
+      confirm.addEventListener("click", () => {
+        f2.style.display = "none";
+        f3.style.display = "flex";
+      });
+    </script>
+  </body>
+</html>
